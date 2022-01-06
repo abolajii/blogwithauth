@@ -37,9 +37,9 @@ const SignUp = () => {
 				const data = { userName, accessToken };
 
 				localStorage.setItem('token', JSON.stringify(data));
-				navigate('/');
+				// navigate('/login');
 
-				// navigate('/');
+				navigate('/home');
 			})
 			.catch((error) => console.log(error));
 	};

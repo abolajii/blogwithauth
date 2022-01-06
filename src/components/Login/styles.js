@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -50,7 +51,7 @@ export const SubmitButton = styled.button`
 	text-transform: uppercase;
 	padding: 1rem;
 	margin-top: 2rem;
-	margin-bottom: 2rem;
+	/* margin-bottom: 1rem; */
 	border-radius: 3px;
 	color: white;
 	font-size: 16px;
@@ -59,6 +60,14 @@ export const SubmitButton = styled.button`
 
 export const Dont = styled.div`
 	color: teal;
+	.link {
+		color: teal;
+	}
+`;
+
+export const Password = styled.div`
+	margin: 0.5rem 0;
+
 	.link {
 		color: teal;
 	}

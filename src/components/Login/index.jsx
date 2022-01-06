@@ -10,6 +10,7 @@ import {
 	Input,
 	InputContainer,
 	Label,
+	Password,
 	SubmitButton,
 	Text,
 } from './styles';
@@ -44,7 +45,7 @@ const Login = () => {
 				const data = { userName, accessToken };
 
 				localStorage.setItem('token', JSON.stringify(data));
-				navigate('/');
+				navigate('/home');
 			})
 			.catch((error) => console.log(error.msg));
 	};
@@ -73,6 +74,11 @@ const Login = () => {
 					/>
 				</InputContainer>
 				<SubmitButton>Login</SubmitButton>
+				<Password>
+					<Link className='link' to='/forgot-password'>
+						Forgot your password?
+					</Link>
+				</Password>
 				<Dont>
 					Don't have an account ?{' '}
 					<Link className='link' to='/signup'>

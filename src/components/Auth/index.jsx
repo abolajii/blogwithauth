@@ -13,7 +13,7 @@ export const Cra = () => {
 	const location = useLocation();
 
 	return user !== null ? (
-		<Navigate to={'/'} replace state={{ from: location }} />
+		<Navigate to={'/home'} replace state={{ from: location }} />
 	) : (
 		<Outlet />
 	);

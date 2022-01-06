@@ -1,26 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	padding: 1rem;
+	position: relative;
+	top: 90px;
 `;
 
 export const Inner = styled.div`
 	padding: 1rem;
-	display: flex;
-	flex-direction: column;
-`;
-
-export const Posts = styled.div`
 	display: grid;
-	gap: 15px;
 	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+	color: black;
 `;
 
 export const Text = styled.p`
-	margin: 2rem 0;
+	margin-bottom: 2rem;
 	font-size: 19px;
-	height: 30px;
-	width: 100%;
 `;
 
 export const Button = styled.button`
@@ -37,7 +32,7 @@ export const Button = styled.button`
 
 export const NameSpan = styled.span`
 	font-weight: bold;
-	padding-left: 0.3rem;
+	padding-left: 0.6rem;
 `;
 
 export const Card = styled.div`
@@ -50,6 +45,7 @@ export const Card = styled.div`
 
 export const ImageContainer = styled.div`
 	height: 30vh;
+	background-color: teal;
 `;
 
 export const Image = styled.img`
@@ -62,16 +58,15 @@ export const Bottom = styled.div`
 	padding: 1rem;
 `;
 
-export const AuthorSkeleton = styled.p`
-	width: 100%;
-	height: 30px;
-	margin: 6px 0;
-`;
-export const Author = styled.p`
-	width: 100%;
-	/* height: 30px; */
+export const Loader = styled.div`
+	height: 22px;
+	margin: 10px 0;
 `;
 
-export const Dates = styled.p``;
+export const Author = styled.p``;
+
+export const Dates = styled.p`
+	height: 10px;
+`;
 
 export const Desc = styled.p``;

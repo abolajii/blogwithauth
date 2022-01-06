@@ -57,7 +57,6 @@ const Modal = ({ setShowModal, showModal }) => {
 
 	const handleSubmitTwo = (e) => {
 		const { id } = jwt.verify(tokenToVerify, process.env.REACT_APP_JWT_SECRET);
-
 		e.preventDefault();
 		if (password1 === password2) {
 			const data = { password: password1 };
